@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Page</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Registration.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="validation.js"></script>
+</head>
+
+<body>
+    <div class="rwo">
+        <h2 class="col-sm-offset-2">Registration Form</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-11 col-sm-offset-1">
+                <form method="POST" onsubmit="return validateForm()">
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">First Name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Last Name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" placeholder="Enter your last name" required>
+                        </div>
+                    </div>
+                    <div class="form-check form-check-inline row">
+                        <label class="form-check-label col-sm-2">Gender:</label>
+
+                        <div class="col-sm-8">
+                            <input class="form-check-input" type="radio" value="option1" name="gender" id="male">
+                            <label class="form-check-label">Male</label>
+
+                            <input class="form-check-input" style="margin-left:20px" type="radio" value="option2" name="gender" id="female">
+                            <label class="form-check-label">Female</label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Address:</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" placeholder="Enter your address here" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check">
+                            <label class="form-check-label">Terms and Condition</label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            
+                            <button type="reset" class="btn btn-danger">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
